@@ -75,6 +75,16 @@ public class DeptServiceImpl implements DeptService {
 		return t;
 	}
 
+	/**
+	 * 递推出父节点的所以层级下的ID
+	 * @param deptid
+	 * @return
+	 */
+	public String findDeptByParaID(String deptid){
+		String childrenOrgOfHr = sysDeptMapper.findDeptByParaID(deptid);
+		return childrenOrgOfHr;
+	}
+
 	@Override
 	public boolean checkDeptHasUser(Long deptId) {
 		// TODO Auto-generated method stub
