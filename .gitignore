@@ -18,6 +18,7 @@ buildNumber.properties
 
 .idea/
 .log
+.sql
 # User-specific stuff:
 
 
