@@ -251,6 +251,7 @@ public class UserController extends BaseController {
         try {
             result = userService.updatePersonalImg(file, avatar_data, getUserId());
         } catch (Exception e) {
+            e.printStackTrace();
             return R.error("更新图像失败！");
         }
         if (result != null && result.size() > 0) {

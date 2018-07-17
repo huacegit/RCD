@@ -18,6 +18,7 @@ public class UserDO implements Serializable {
     private String password;
     // 部门
     private Long deptId;
+    //部门名
     private String deptName;
     // 邮箱
     private String email;

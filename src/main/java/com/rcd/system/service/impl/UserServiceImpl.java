@@ -201,7 +201,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Map<String, Object> updatePersonalImg(MultipartFile file, String avatar_data, Long userId) throws Exception {
+    public Map<String, Object> updatePersonalImg(MultipartFile file, String avatar_data, Long userId) {
         String fileName = file.getOriginalFilename();
         fileName = FileUtil.renameToUUID(fileName);
         FileDO sysFile = new FileDO(FileType.fileType(fileName), "/files/" + fileName, new Date());
@@ -227,7 +227,8 @@ public class UserServiceImpl implements UserService {
             byte[] b = out.toByteArray();
             FileUtil.uploadFile(b, rcdConfig.getUploadPath(), fileName);
         } catch (Exception e) {
-            throw new Exception("图片裁剪错误！！");
+//            throw new Exception("图片裁剪错误！！");
+            e.printStackTrace();
         }
         Map<String, Object> result = new HashMap<>();
         if (sysFileService.save(sysFile) > 0) {

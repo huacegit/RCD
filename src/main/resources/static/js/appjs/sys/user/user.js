@@ -65,6 +65,10 @@ function load(deptId) {
 						field : 'email',
 						title : '邮箱'
 					},
+                    {
+                        field : 'deptName',
+                        title : '部门名'
+                    },
 					{
 						field : 'status',
 						title : '状态',
@@ -101,7 +105,7 @@ function reLoad() {
 }
 function add() {
 	// iframe层
-	layer.open({
+    var index =layer.open({
 		type : 2,
 		title : '增加用户',
 		maxmin : true,
@@ -109,6 +113,7 @@ function add() {
 		area : [ '800px', '520px' ],
 		content : prefix + '/add'
 	});
+    layer.full(index);
 }
 function remove(id) {
 	layer.confirm('确定要删除选中的记录？', {
