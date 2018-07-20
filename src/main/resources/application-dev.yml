@@ -3,13 +3,13 @@ rcd:
 logging:
   level:
     root: info
-    com.rcd: debug
+    com.huace: debug
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.0.5:3306/rcddb?useUnicode=true&characterEncoding=utf8
-#   url: jdbc:mysql://127.0.0.1:3306/rcd?useUnicode=true&characterEncoding=utf8
+#   url: jdbc:mysql://127.0.0.1:3306/rcddb?useUnicode=true&characterEncoding=utf8
     username: root
     password: 123456
     initialSize: 1

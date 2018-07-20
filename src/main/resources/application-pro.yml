@@ -3,7 +3,7 @@ rcd:
 logging:
   level:
     root: error
-    com.rcd: info
+    com.huace: info
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource

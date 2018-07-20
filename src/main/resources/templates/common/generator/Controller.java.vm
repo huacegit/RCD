@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import ${package}.domain.${className}DO;
 import ${package}.service.${className}Service;
-import com.rcd.common.utils.PageUtils;
-import com.rcd.common.utils.Query;
-import com.rcd.common.utils.R;
+import com.huace.common.utils.PageUtils;
+import com.huace.common.utils.Query;
+import com.huace.common.utils.R;
 
 /**
  * ${comments}

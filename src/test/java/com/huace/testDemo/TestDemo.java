@@ -1,4 +1,4 @@
-package com.rcd.testDemo;
+package com.huace.testDemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
